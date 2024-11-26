@@ -1,20 +1,24 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import SmartTable from "@frontend/components/table/SmartTable.vue";
+import { ISmartTableConfig } from "@frontend/interfaces/SmartTable";
+
+const tableConfig: ISmartTableConfig = {
+  columns: [
+    { label: "Column A", key: "a", type: "string" },
+    { label: "Column B", key: "b", type: "string" },
+    { label: "Column C", key: "c", type: "list" },
+  ],
+  data: [
+    { a: "hej", b: "Då", c: [1, 2, 3, 4] },
+    { a: "Test1", b: "Test2", c: [1, 2, 4, 9, 10] },
+  ],
+};
+</script>
 
 <template>
-  <div>yo</div>
+  <div>
+    <SmartTable :config="tableConfig"></SmartTable>
+  </div>
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
+<style></style>
