@@ -1,9 +1,9 @@
 {
   "name": "daisy-core-playground-backend",
   "version": "1.0.0",
-  "type": "module",
   "scripts": {
-    "dev": "ts-node-dev --loader ts-node/esm --respawn --transpile-only server.ts"
+    "dev": "ts-node-dev server.ts",
+    "test": "ts-node-dev test.ts"
   },
   "author": "Tobias Olofsson",
   "license": "ISC",

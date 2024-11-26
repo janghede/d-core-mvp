@@ -2,7 +2,6 @@
   "name": "daisy-core-mvp",
   "version": "0.0.1",
   "description": "Daisy core framework",
-  "type": "module",
   "main": "index.ts",
   "files": [
     "index.ts",

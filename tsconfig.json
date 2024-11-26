@@ -1,20 +1,10 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
-    "moduleResolution": "node",
-    "esModuleInterop": true,
-    "jsx": "preserve",
+    "target": "esnext", // Compile to a modern ECMAScript version that supports ES modules
+    "module": "Node16", // Use ES module syntax for module code generation
+    "moduleResolution": "Node16", // Use Node.js style module resolution
+    "esModuleInterop": true, // Enables default imports from modules with no default export
     "strict": true,
-    "skipLibCheck": true,
-    "declaration": true,
-    "declarationDir": "dist/types",
-    "emitDeclarationOnly": true,
-    "baseUrl": "."
-  },
-  "include": [
-    "frontend/**/*.vue",
-    "frontend/**/*.ts",
-    "vue-shims.d.ts" // Include the vue-shims.d.ts file for TypeScript
-  ]
+    "composite": true
+  }
 }

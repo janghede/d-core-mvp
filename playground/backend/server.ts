@@ -1,6 +1,6 @@
 // Koa
 import { IPlayGroundContext, IPlayGroundState } from "./interface/playground";
-import { Loader } from "@backend/loader/loader";
+import { Loader } from "../../backend/loader/loader";
 
 // Connections
 import jsonplaceholderHttpConnection from "./connection/jsonplaceholder.connection";
