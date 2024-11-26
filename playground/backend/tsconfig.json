@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module": "ESNext", // Use ES Modules
+    "target": "ES2020", // Target modern JavaScript
+    "esModuleInterop": true, // Improve compatibility with CommonJS
+    "strict": true, // Enable strict mode
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true, // If you import JSON files
+    "moduleResolution": "node", // Use Node.js module resolution
+    "paths": {
+      "@backend/*": ["../../backend/*"] // Set up alias resolution
+    }
+  },
+  "include": ["./**/*"],
+  "exclude": ["node_modules", "dist"]
+}

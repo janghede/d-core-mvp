@@ -2,7 +2,6 @@ import { IFeature, IFeatureRouteConfig } from "../interface/feature";
 import { ICoreState, ICoreContext } from "../interface/koa";
 import Router from "koa-router";
 import compose from "koa-compose";
-import assert from "assert";
 
 export class Feature<TState extends ICoreState, TContext extends ICoreContext> implements IFeature<TState, TContext> {
   private router: Router<TState, TContext>;
@@ -22,7 +21,6 @@ export class Feature<TState extends ICoreState, TContext extends ICoreContext> i
 
   register<TReturn = unknown>(route: IFeatureRouteConfig<TState, TContext, TReturn>) {
     this.router.register(route.path, [route.method], compose([route.fn]));
-
     return this;
   }
 

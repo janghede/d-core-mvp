@@ -1,26 +1,3 @@
-// {
-//   "compilerOptions": {
-//     /* Basic Options */
-//     "target": "ESNext", // Use the latest ECMAScript version
-//     "module": "ESNext", // Use ES module syntax
-//     "lib": ["DOM", "ESNext"], // Include DOM and ESNext libraries
-//     "allowJs": false, // Disallow JavaScript files
-//     "strict": true, // Enable strict type checking
-//     "moduleResolution": "Node", // Use Node.js style module resolution
-//     "esModuleInterop": true, // Enable compatibility for default imports from CommonJS modules
-//     "skipLibCheck": true, // Skip type checking for libraries in node_modules
-//     "sourceMap": true, // Generate source maps for debugging
-//     "declaration": true, // Generate .d.ts declaration files
-//     "declarationMap": true, // Generate declaration maps
-//     "outDir": "./dist", // Output compiled files to the dist directory
-//     "baseUrl": "." // Set the base URL to the project root
-//   },
-//   "include": ["frontend/**/*.vue", "frontend/**/*.ts", "backend/**/*.ts", "vue-shims.d.ts"],
-//   "exclude": [
-//     "node_modules" // Exclude node_modules
-//   ]
-// }
-
 {
   "compilerOptions": {
     "target": "esnext",
@@ -33,10 +10,7 @@
     "declaration": true,
     "declarationDir": "dist/types",
     "emitDeclarationOnly": true,
-    "baseUrl": ".",
-    "paths": {
-      "@frontend/*": ["frontend/*"]
-    }
+    "baseUrl": "."
   },
   "include": [
     "frontend/**/*.vue",
