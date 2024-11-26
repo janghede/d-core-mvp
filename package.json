@@ -12,12 +12,19 @@
   "author": "Tobias Olofsson",
   "license": "ISC",
   "peerDependencies": {
+    "axios": "^4.0.13",
     "koa": "^2.15.3",
+    "koa-router": "^13.0.1",
     "vue": "^3.5.13",
-    "vue-router": "^4.0.13"
+    "vue-router": "^4.0.13",
+    "koa-compose": "^4.1.0"
   },
   "devDependencies": {
+    "@types/koa": "^2.15.0",
+    "axios": "^1.7.8",
     "koa": "^2.15.3",
+    "koa-compose": "^4.1.0",
+    "koa-router": "^13.0.1",
     "typescript": "^5.7.2",
     "vue": "^3.5.13",
     "vue-router": "^4.0.13",
