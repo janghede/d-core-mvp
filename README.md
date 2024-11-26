@@ -1,1 +1,1 @@
-# daisy-core-mvp
+# Daisy core

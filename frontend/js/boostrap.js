@@ -3350,4 +3350,3 @@
     { Alert: q, Button: K, Carousel: at, Collapse: pt, Dropdown: li, Modal: Si, Offcanvas: Bi, Popover: hn, ScrollSpy: mn, Tab: On, Toast: In, Tooltip: an }
   );
 });
-//# sourceMappingURL=bootstrap.bundle.min.js.map

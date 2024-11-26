@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { PropType } from "vue";
-import { ISmartTableConfig } from "../../interfaces/SmartTable";
+import { ISmartTableConfig } from "../../interfaces/table/SmartTable";
 
 const props = defineProps({
   config: { type: Object as PropType<ISmartTableConfig>, required: true },
