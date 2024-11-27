@@ -5,6 +5,9 @@
     "moduleResolution": "Node16",
     "esModuleInterop": true,
     "strict": true,
-    "composite": true
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "composite": true,
+    "types": ["vite/client"]
   }
 }
