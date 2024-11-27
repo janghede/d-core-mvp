@@ -1,12 +1,12 @@
 {
   "compilerOptions": {
-    "target": "esnext", // Compile to a modern ECMAScript version that supports ES modules
-    "module": "Node16", // Use ES module syntax for module code generation
-    "moduleResolution": "Node16", // Use Node.js style module resolution
-    "esModuleInterop": true, // Enables default imports from modules with no default export
-    "strict": true, // Enable strict mode
+    "target": "esnext",
+    "module": "Node16",
+    "moduleResolution": "Node16",
+    "esModuleInterop": true,
+    "strict": true,
     "allowSyntheticDefaultImports": true,
-    "resolveJsonModule": true // If you import JSON files
+    "resolveJsonModule": true
   },
   "references": [{ "path": "../../" }]
 }
