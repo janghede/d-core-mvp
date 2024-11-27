@@ -1,11 +1,12 @@
 {
-  "name": "daisy-core-mvp",
+  "name": "d-core-mvp",
   "version": "0.0.1",
-  "description": "Daisy core framework",
+  "description": "D core framework",
   "main": "index.ts",
   "files": [
     "index.ts",
-    "frontend/**/*"
+    "frontend/**/*",
+    "backend/**/*"
   ],
   "scripts": {},
   "author": "Tobias Olofsson",
