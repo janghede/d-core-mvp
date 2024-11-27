@@ -23,6 +23,7 @@
   "devDependencies": {
     "@testing-library/vue": "^8.1.0",
     "@types/koa": "^2.15.0",
+    "@vitejs/plugin-vue": "^5.2.1",
     "@vue/test-utils": "^2.4.6",
     "axios": "^1.7.8",
     "jsdom": "^25.0.1",
