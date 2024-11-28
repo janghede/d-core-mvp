@@ -9,7 +9,9 @@
     "frontend/**/*",
     "backend/**/*"
   ],
-  "scripts": {},
+  "scripts": {
+    "test": "vitest"
+  },
   "author": "Tobias Olofsson",
   "license": "ISC",
   "peerDependencies": {

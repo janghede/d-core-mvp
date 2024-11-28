@@ -1,6 +1,6 @@
 import { IMiddleware } from "koa-router";
 import { ParameterizedContext } from "koa";
-import { ICoreContext, ICoreState } from "./koa";
+import { ICoreContext, ICoreState } from "./koa.js";
 
 export interface IFeature<TState extends ICoreState, TContext extends ICoreContext> {
   config?: Array<IFeatureRouteConfig<TState, TContext>>;

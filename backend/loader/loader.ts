@@ -1,9 +1,9 @@
 import Koa, { BaseContext, Middleware, ParameterizedContext } from "koa";
 import compose from "koa-compose";
-import { IContextConnection, ICoreContext, ICoreState } from "../interface/koa";
-import { IHttpConnectionConfig } from "../interface/httpConnection";
-import { httpConnection } from "../connection/httpConnection";
-import { IFeature } from "../interface/feature";
+import { IContextConnection, ICoreContext, ICoreState } from "../interface/koa.js";
+import { IHttpConnectionConfig } from "../interface/httpConnection.js";
+import { httpConnection } from "../connection/httpConnection.js";
+import { IFeature } from "../interface/feature.js";
 
 export class Loader<TState extends ICoreState, TContext extends ICoreContext> {
   public app: Koa<TState, TContext>;

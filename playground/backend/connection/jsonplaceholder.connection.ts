@@ -1,4 +1,4 @@
-import { IHttpConnectionConfig } from "../../../backend/interface/httpConnection";
+import { IHttpConnectionConfig } from "@backend/interface/httpConnection.js";
 
 export default {
   name: "jsonplaceholder",

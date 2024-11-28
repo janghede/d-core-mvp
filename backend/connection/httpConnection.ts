@@ -1,6 +1,6 @@
 import axios, { AxiosResponse } from "axios";
 import { AxiosInstance, AxiosRequestConfig } from "axios";
-import { IHttpConnection } from "../interface/httpConnection";
+import { IHttpConnection } from "../interface/httpConnection.js";
 
 export class httpConnection implements IHttpConnection {
   protected client: AxiosInstance;

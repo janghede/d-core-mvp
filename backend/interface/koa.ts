@@ -1,5 +1,5 @@
 import { DefaultContext, DefaultState } from "koa";
-import { IHttpConnection } from "./httpConnection";
+import { IHttpConnection } from "./httpConnection.js";
 
 export interface IStateUser {
   username: string;

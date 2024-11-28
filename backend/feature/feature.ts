@@ -1,5 +1,5 @@
-import { IFeature, IFeatureRouteConfig } from "../interface/feature";
-import { ICoreState, ICoreContext } from "../interface/koa";
+import { IFeature, IFeatureRouteConfig } from "../interface/feature.js";
+import { ICoreState, ICoreContext } from "../interface/koa.js";
 import Router from "koa-router";
 import compose from "koa-compose";
 

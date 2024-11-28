@@ -6,7 +6,9 @@
     "esModuleInterop": true,
     "strict": true,
     "allowSyntheticDefaultImports": true,
-    "resolveJsonModule": true
-  },
-  "references": [{ "path": "../../" }]
+    "resolveJsonModule": true,
+    "paths": {
+      "@backend/*": ["../../backend/*"]
+    }
+  }
 }
