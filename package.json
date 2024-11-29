@@ -1,6 +1,6 @@
 {
   "name": "d-core-mvp",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "D core framework",
   "main": "index.ts",
   "type": "module",
@@ -16,7 +16,7 @@
   "author": "Tobias Olofsson",
   "license": "ISC",
   "peerDependencies": {
-    "axios": "^4.0.13",
+    "axios": "^1.7.8",
     "koa": "^2.15.3",
     "koa-compose": "^4.1.0",
     "koa-router": "^13.0.1",
