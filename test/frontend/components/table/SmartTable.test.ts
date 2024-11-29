@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest";
 import { mount } from "@vue/test-utils";
-import SmartTable from "../../../../frontend/components/table/SmartTable.vue";
-import type { ISmartTableConfig } from "../../../../frontend/interfaces/table/SmartTable.js";
+import SmartTable from "@frontend/components/table/SmartTable.vue";
+import type { ISmartTableConfig } from "@frontend/interfaces/table/SmartTable.js";
 
 const mockConfig: ISmartTableConfig = {
   columns: [

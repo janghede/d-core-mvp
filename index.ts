@@ -1,2 +1,2 @@
-export * from "./frontend/index";
-export * from "./backend/index";
+export * from "./frontend/index.js";
+export * from "./backend/index.js";
