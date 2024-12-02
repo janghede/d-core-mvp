@@ -1,12 +1,12 @@
 // Koa
-import { IPlayGroundContext, IPlayGroundState } from "./interface/playground.js";
-import { Loader } from "@backend/loader/loader.js";
+import { IPlayGroundContext, IPlayGroundState } from "./interface/playground.ts";
+import { Loader } from "@backend/loader/loader.ts";
 
 // Connections
-import jsonplaceholderHttpConnection from "./connection/jsonplaceholder.connection.js";
+import jsonplaceholderHttpConnection from "./connection/jsonplaceholder.connection.ts";
 
 // Features
-import { todoFeature } from "./feature/todoFeature.js";
+import { todoFeature } from "./feature/todoFeature.ts";
 
 let loader = new Loader<IPlayGroundState, IPlayGroundContext>();
 

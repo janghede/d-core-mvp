@@ -1,3 +1,3 @@
-export * from "./frontend/index.js";
-export * from "./backend/index.js";
-export * from "./shared/index.js";
+export * from "./frontend/index.ts";
+export * from "./backend/index.ts";
+export * from "./shared/index.ts";

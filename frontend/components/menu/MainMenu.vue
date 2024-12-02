@@ -16,7 +16,7 @@ const goToPath = (path: string) => {
 
 <template>
   <div class="sidebar">
-    <a v-for="menuItem in config.items" href="#" v-on:click="goToPath(menuItem.path)">{{ menuItem.label }}</a>
+    <a v-for="menuItem in config.items" href="#" v-on:click="goToPath(menuItem.path)"> - {{ menuItem.label }}</a>
   </div>
 
   <div class="content">
