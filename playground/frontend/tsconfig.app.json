@@ -23,7 +23,8 @@
     "noUncheckedSideEffectImports": true,
 
     "paths": {
-      "@frontend/*": ["../../frontend/*"]
+      "@frontend/*": ["../../frontend/*"],
+      "@app-shared/*": ["../shared/*"]
     }
   },
   "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"]

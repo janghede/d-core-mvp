@@ -7,10 +7,11 @@ import jsonplaceholderHttpConnection from "./connection/jsonplaceholder.connecti
 
 // Features
 import { todoFeature } from "./feature/todoFeature.ts";
+import { sendObjectFeature } from "./feature/sendObject.feature.ts";
 
 let loader = new Loader<IPlayGroundState, IPlayGroundContext>();
 
-loader.loadHttpConnection(jsonplaceholderHttpConnection).loadFeatures([todoFeature]);
+loader.setCors().loadHttpConnection(jsonplaceholderHttpConnection).loadFeatures([todoFeature, sendObjectFeature]);
 
 console.log(`[server]: process.env.IS_PRIMARY: ${process.env.IS_PRIMARY} `);
 
