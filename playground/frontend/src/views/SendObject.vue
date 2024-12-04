@@ -14,10 +14,10 @@ const user = ref<TUser>({
 
 // Validation
 const validationOk = ref(false);
-const validationIssues = ref<ZodIssue[] | null>(null);
-const getValidationIssues = (key: keyof TUser) => getIssues(validationIssues.value, key);
+const validationIssues = ref<ZodIssue[]>();
+const getValidationIssues = (key: keyof TUser) => getIssues(key, validationIssues.value);
 const validatePayload = () => {
-  validationIssues.value = null;
+  validationIssues.value = undefined;
   const ZResult = ZUser.safeParse(user.value);
   if (!ZResult.success) {
     validationIssues.value = ZResult.error.issues;
@@ -30,7 +30,7 @@ const validatePayload = () => {
 const sendSuccess = ref<boolean | undefined>(undefined);
 const sendPayload = () => {
   sendSuccess.value = undefined;
-  validationIssues.value = null;
+  validationIssues.value = undefined;
   axios.post("http://localhost:3003/api/sendObject", user.value).then(() => {
     sendSuccess.value = true;
   }).catch((err: AxiosError) => {

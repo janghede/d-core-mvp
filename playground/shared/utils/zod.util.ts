@@ -1,6 +1,6 @@
 import { ZodIssue } from "zod";
 
-export const getIssues = (zodIssues: unknown, key: unknown) => {
+export const getIssues = (key: string | number, zodIssues?: ZodIssue[]) => {
   if (!isZodIssueArray(zodIssues)) return;
   if (!isStringOrNumber(key)) return;
   return zodIssues.filter((i) => i.path.includes(key)).map((i) => i.message);
