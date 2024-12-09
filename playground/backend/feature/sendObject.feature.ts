@@ -1,7 +1,19 @@
 import { IPlayGroundContext, IPlayGroundState } from "../interface/playground.ts";
 import { ParameterizedContext } from "koa";
 import { Feature } from "@backend/feature/feature.ts";
-import { ZUser } from "../../shared/interface/sendObject.interface.ts";
+import { ZUser, ZDbUser } from "../../shared/interface/sendObject.interface.ts";
+
+const getUsersFromDb = () => {
+  const dbRequest = (): any[] => [
+    { id: "ab12345", email: "abc@edu.stockholm.se", name: "Markus" },
+    { id: "ab12345", email: "abc@edu.stockholm.se", name: "" },
+    { id: "ab12345", email: "abc@edu.stockholm.se", name: null },
+  ];
+
+  const dbData = dbRequest();
+
+  return dbData.filter((d) => ZDbUser.safeParse(d).success);
+};
 
 const sendObject = async (ctx: ParameterizedContext<IPlayGroundState, IPlayGroundContext>) => {
   const user = ZUser.safeParse(ctx.request.body);
@@ -10,6 +22,8 @@ const sendObject = async (ctx: ParameterizedContext<IPlayGroundState, IPlayGroun
     ctx.body = user.error.issues;
     return;
   }
+
+  const dbUsers = getUsersFromDb();
 
   ctx.status = 200;
 };
