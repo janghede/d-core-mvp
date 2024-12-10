@@ -1,2 +1,1 @@
-# daisy-core
-Daisy core module.
+# Daisy core

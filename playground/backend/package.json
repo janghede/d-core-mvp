@@ -1,0 +1,12 @@
+{
+  "name": "daisy-core-playground-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch server.ts"
+  },
+  "author": "Tobias Olofsson",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {}
+}
