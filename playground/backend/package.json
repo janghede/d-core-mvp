@@ -3,19 +3,10 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "tsx server.ts"
+    "dev": "tsx watch server.ts"
   },
   "author": "Tobias Olofsson",
   "license": "ISC",
   "description": "",
-  "dependencies": {
-    "koa": "^2.15.3"
-  },
-  "devDependencies": {
-    "@types/koa": "^2.15.0",
-    "@types/koa-router": "^7.4.8",
-    "@types/node": "^22.10.0",
-    "tsx": "^4.19.2",
-    "typescript": "^5.7.2"
-  }
+  "dependencies": {}
 }

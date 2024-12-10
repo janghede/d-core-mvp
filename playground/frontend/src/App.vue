@@ -7,6 +7,7 @@ const mainMenuConfig: IMainMenuConfig = {
   items: [
     { label: "Home", path: "/" },
     { label: "SmartTable", path: "/SmartTable" },
+    { label: "SendObject", path: "/SendObject" },
   ],
 };
 </script>
